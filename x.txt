@@ -1,0 +1,82 @@
+const data = {
+    'inbox':[
+        {
+            id:1,
+            to:'mayukh@m.com',
+            from:"mayukh@y.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh no bday gift for you, bye",
+            isFav:false,
+        },
+        {
+            id:2,
+            to:'mayukh@m.com',
+            from:"mayukh@x.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh no bday gift for you, bye",
+            isFav:false,
+        },
+        {
+            id:3,
+            to:'mayukh@m.com',
+            from:"mayukh@z.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh no bday gift for you, bye",
+            isFav:false,
+        },
+        {
+            id:4,
+            to:'mayukh@m.com',
+            from:"mayukh@fav.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh here is $500 bday gift for you, bye",
+            isFav:true,
+        },
+        {
+            id:5,
+            to:'mayukh@m.com',
+            from:"mayukh@fav1.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh here is $500 bday gift for you, bye",
+            isFav:true,
+        },
+    ],
+    'favourite':[
+        {
+            id:4,
+            to:'mayukh@m.com',
+            from:"mayukh@fav.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh here is $500 bday gift for you, bye",
+            isFav:true,
+        },
+        {
+            id:5,
+            to:'mayukh@m.com',
+            from:"mayukh@fav1.com",
+            subject:"Mayukh's birthday gift",
+            body:"hey mayukh here is $500 bday gift for you, bye",
+            isFav:true,
+        },
+    ],
+    'spam':[
+        {
+            id:6,
+            to:'mayukh@m.com',
+            from:"mayukh@non.com",
+            subject:"Mayukh's birthday gift",
+            body:"Random",
+            isFav:false
+        },
+        {
+            id:7,
+            to:'mayukh@m.com',
+            from:"mayukh@non1.com",
+            subject:"Mayukh's birthday gift",
+            body:"Random",
+            isFav:false
+        },
+    ],
+}
+
+localStorage.setItem('mails',JSON.stringify(data))
